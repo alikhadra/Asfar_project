@@ -1,0 +1,175 @@
+* {
+ /* margin: 0;
+ padding: 0; */
+ box-sizing: border-box;
+ scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: "JF Flat Regular";
+	src: url(../fonts/JF-Flat-regular.eot);
+    src: url(../fonts/JF-Flat-regular.eot?#iefix) format('embedded-opentype'),
+         url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+         url(../fonts/JF-Flat-regular.woff) format('woff'),
+         url(../fonts/JF-Flat-regular.ttf) format('truetype');
+	font-weight: bolder;
+	font-style: normal
+}
+
+body {
+	font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	color: black;
+}
+.navbar h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(146, 255, 103);
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 10px;
+}
+.navbar {
+        width: 100%;
+        display: flex;
+}
+.carousel-top {
+    margin-bottom: 50px;
+}
+.carousel-top .row {
+    display: block !important;
+}
+.carousel-top .carousel .carousel-item img {
+    height: 400px;
+}
+.carousel-top .caption {
+    display: flex;
+    margin-right: 30px;
+}
+.carousel-top .caption .btn-search{
+    margin-right: 50px;
+}
+
+.btn-login {
+        justify-content: start;
+}
+.carousel .fa-chevron-right,
+.carousel .fa-chevron-left {
+    color: #222;
+
+}
+.features-trips .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features-trips .card img {
+    height: 200px;
+}
+.features-trips .card .card-body {
+    text-align: center;
+}
+.why-us {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #eee;
+    padding: 20px 0 ;
+}
+.why-us h3 {
+    background-color: rgb(247, 252, 0);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+}
+.why-us ul {
+    list-style: none;
+    line-height: 1.8em;
+    font-size: larger;
+    font-weight: 800;
+}
+.footer {
+    background-color: rgb(46, 46, 46);
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+.footer .top-footer ul li {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-left: 5px;
+}
+.footer .top-footer ul li a {
+    color: #ddd;
+}
+.footer .top-footer ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.footer .contact h5 {
+    margin-right: 25px;
+    font-weight: bolder;
+    color: rgb(133, 146, 255);
+}
+.footer .contact .social li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+.footer .contact .social li a {
+    color: #ccc;
+    
+}
+.footer .contact .social li .fa-facebook-f:hover {
+    color: #0D8AF0;
+    transition: all 0.3s ease-in-out;
+}
+.footer .contact .social li .fa-twitter:hover {
+    color: #5DA9DD;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.footer .contact .social li .fa-instagram:hover {
+    color: #C838A9;
+    transition: all 0.3s ease-in-out;
+
+}
+.footer .contact .social li .fa-yahoo:hover {
+    color: #6001D2;
+    transition: all 0.3s ease-in-out;
+
+}
+
+@media(max-width:1049px){
+    .caption h3 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:968px){
+    .caption h3 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:864px){
+    .features-trips .uk-card {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:832px) {
+    .carousel-top .caption {
+        display: block;
+    }
+}
+@media(max-width:576px) {
+    .features-trips .italy-card {
+        margin-top: 20px;
+    }
+    
+}
