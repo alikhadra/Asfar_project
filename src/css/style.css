@@ -1,6 +1,4 @@
 * {
- /* margin: 0;
- padding: 0; */
  box-sizing: border-box;
  scroll-behavior: smooth;
 }
@@ -21,60 +19,106 @@ body {
 	font-size: 14px;
 	color: black;
 }
-.navbar h1 {
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    color: rgb(146, 255, 103);
-    background-color: #eee;
-    padding: 5px;
-    border-radius: 10px;
-}
+
+/* Navbar Styling */
 .navbar {
         width: 100%;
-        display: flex;
 }
+.navbar .navbar-brand img {
+    width: 40%;
+}
+.navbar .navbar-brand span {
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+}
+.navbar .btn-login button {
+    box-shadow: none;
+}
+
+/* Carousel Styling */
 .carousel-top {
     margin-bottom: 50px;
 }
 .carousel-top .row {
     display: block !important;
 }
-.carousel-top .caption button {
-    border-radius: 10px;
-}
 .carousel-top .carousel .carousel-item img {
     height: 400px;
-}
-.carousel-top .caption {
-    display: flex;
-    margin-right: 30px;
-}
-.carousel-top .caption .btn-search{
-    margin-right: 50px;
-}
-
-.btn-login {
-        justify-content: start;
 }
 .carousel .fa-chevron-right,
 .carousel .fa-chevron-left {
     color: #222;
-
 }
+.caption h4 {
+    width: 70%;
+    /* font-size: 22px; */
+    margin-right: 20px;
+}
+
+/* Search Button Styling */
+form.search-form {
+    margin: auto;
+    margin-right: 50px;
+    max-width: 300px;
+    width: 30%;
+    margin-left: 250px;
+}
+form.search-form input {
+    padding: 10px;
+    font-size: 17px;
+    height: 40px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  form input:focus {
+      outline: none;
+  }
+  form.search-form button {
+    float: left;
+    width: 20%;
+    height: 40px;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  form.search-form button:hover {
+    background: #0b7dda;
+  }
+  form.search-form::after {
+    content: "";
+    clear: both;
+  }
+
+
 .features-trips .row {
     display: flex;
     justify-content: space-around;
 }
 .features-trips h3 {
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 30px;
-    background-color: #ddd;
     padding: 20px;
-    border-radius: 50%;
+    color: #222;
+    font-weight: 800;
+}
+.features-trips .card {
+    width: 22rem;  
 }
 .features-trips .card img {
-    height: 200px;
+    height: 250px;
+    width: 100%;
+    
 }
 .features-trips .card .card-body {
     text-align: center;
@@ -87,23 +131,32 @@ body {
     border-radius: 20px;
 }
 .why-us h3 {
-    background-color: rgb(247, 252, 0);
-    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
     padding: 20px;
-    border-radius: 50%;
+    color: #222;
+    font-weight: 800;
 }
 .why-us ul {
     list-style: none;
-    line-height: 1.8em;
+    line-height: 2em;
     font-size: larger;
     font-weight: 800;
+    font-family:cursive;
+    display: inline-block;
+    width: 80%;    
+}   
+.why-us .card:hover {
+    background-color: red !important;
+    transition: all 0.5s ease-in-out;
 }
 .footer {
     background-color: rgb(46, 46, 46);
     margin-top: 50px;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
+    height: 300px;
+   
 }
 .footer .top-footer ul li {
     list-style: none;
@@ -111,6 +164,7 @@ body {
     display: inline-block;
     text-align: center;
     margin-left: 5px;
+    margin-top: 10px;     
 }
 .footer .top-footer ul li a {
     color: #ddd;
@@ -121,6 +175,7 @@ body {
 }
 .footer .contact h5 {
     margin-right: 25px;
+    margin-top: 50px;
     font-weight: bolder;
     color: rgb(133, 146, 255);
 }
@@ -155,13 +210,20 @@ body {
 
 }
 .footer .contact h6 {
-    font-size: large ;
+    font-size: 12px ;
     color: #858EFA;
+    margin-top: 50px;
 }
 
-@media(max-width:1049px){
-    .caption h3 {
-        font-size: 25px;
+@media(max-width:976px){
+    .caption {
+        display: block !important; 
+        margin-bottom: 100px;
+    }
+    .caption form {
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -170,21 +232,29 @@ body {
         font-size: 20px;
     }
 }
-
-@media(max-width:864px){
-    .features-trips .uk-card {
-        margin-top: 20px;
+@media(max-width:794px) {
+    .caption h3 {
+        font-size: 18px;
     }
+    .caption form {
+        width: 50%;
+    }
+}
+
+@media(max-width:1099px){
+   .features-trips .row {
+       display: block;
+   }
+   .features-trips .card {
+       margin-right: auto;
+       margin-left: auto;
+       width: 60%;
+       margin-top: 10px;
+   }
 }
 
 @media(max-width:832px) {
     .carousel-top .caption {
         display: block;
     }
-}
-@media(max-width:576px) {
-    .features-trips .italy-card {
-        margin-top: 20px;
-    }
-    
 }

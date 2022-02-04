@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شركة أسفار للسياحة والسفر</title>
-    <!-- <script type="text/html" src="{require('index.js')}"></script> -->
     <script type="text/html" src="{require('index.js')}"></script>
 </head>
 <body>
     <div class="container-fluid">
         
         <div class="row">
-            <nav class="navbar navbar-light bg-ligh">
+            <nav class="navbar navbar-light bg-ligh ml-3 mr-3">
                 <div class="navbar-header">
                     <a href="." class="navbar-brand">
                         <img src="./images/logo.png" alt="وكالة سفر">
+                        <span>أسفار</span>
                     </a>
                 </div>
-                <!-- <h1>شركة أسفار للسياحة والسفر</h1> -->
+
                 <div class="btn-login">
-                    <button type="button" class="btn btn-outline-primary">تسجيل الدخول</button>
-                    <button type="button" class="btn btn-outline-secondary">حساب جديد</button>
+                  <button type="button" class="btn btn-outline-primary">تسجيل الدخول</button>
+                  <button type="button" class="btn btn-outline-secondary">حساب جديد</button>
                 </div>
             </nav>
         </div>
@@ -48,12 +48,14 @@
                     </a>
                   </div>
 
-                  <div class="caption">
-                    <h3>اكتشف أجمل الأماكن السياحية واحصل على أفضل الرحلات الجوية</h3>
-                    <button type="button" class="btn btn-primary btn-lg btn-search">
-                      <i class="fas fa-search ml-2"></i>
-                      ابحث عن الدولة ..
-                    </button>
+                    <div class="caption d-flex w-100">
+                      <h4>اكتشف أجمل الأماكن السياحية واحصل على أفضل الرحلات الجوية</h4>
+                     
+                      <form class="search-form">
+                        <input type="text" placeholder="ابحث عن الدولة ..">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                      </form>
+                    
                   </div>
             </div>
         </section>
@@ -61,70 +63,70 @@
         <section class="features-trips">
           <h3>الاتجاهات المتميزة</h3>
             <div class="row">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="./images/america.jpeg" class="card-img-top" alt="america">
                     <div class="card-body">
-                      <h5 class="card-title">أميركا</h5>
-                      <p class="card-text">يوجد العديد من الأماكن الجميلة في واشنطن</p>
-                      <a href="." class="btn btn-primary">احجز للرحلة إلى أميركا</a>
+                      <h5 class="card-title">الولايات المتحدة الأمريكية</h5>
+                      <a href="." class="btn btn-primary">إحجز رحلتك الآن</a>
                     </div>
                   </div>
 
-                  <div class="card italy-card" style="width: 18rem;">
+                  <div class="card italy-card">
                     <img src="./images/italy.jpeg" class="card-img-top" alt="america">
                     <div class="card-body">
                       <h5 class="card-title">ايطاليا</h5>
-                      <p class="card-text">يوجد العديد من الأماكن الجميلة في مدينة روما</p>
-                      <a href="." class="btn btn-primary">احجز للرحلة إلى ايطاليا</a>
+                      <a href="." class="btn btn-primary">إحجز رحلتك الآن</a>
                     </div>
                   </div>
 
-                  <div class="card uk-card" style="width: 18rem;">
+                  <div class="card uk-card">
                     <img src="./images/uk.jpeg" class="card-img-top" alt="america">
                     <div class="card-body">
                       <h5 class="card-title">المملكة المتحدة</h5>
-                      <p class="card-text">يوجد العديد من الأماكن الجميلة في امستردام</p>
-                      <a href="." class="btn btn-primary">احجز للرحلة إلى بريطانيا</a>
+                      <a href="." class="btn btn-primary">إحجز رحلتك الآن</a>
                     </div>
                   </div>
             </div>
         </section>
 
         <section class="why-us">
-            <h3>لماذا تختارنا ؟</h3>
-                <ul>
-                    <li>  أولاً: توفير مرشدين متخصصين للمساعدة في الحصول على جواز السفر والتأشيرات .</li>
-                    <li> ثانياً: التأكد من الاستعداد للسفر بتوفير غرف في فنادق، رحلات سياحية ووسائل النقل.</li>
-                    <li> ثالثاً: التنسيق مع مختلف خطوط الطيران الدولية.</li>
-                </ul>
+            <h3>لماذا تختارنا</h3>
+            <div class="card text-center d-inline-block w-100 bg-info" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">توفير مرشدين متخصصين للمساعدة في الحصول على جواز السفر والتأشيرات </li>
+                <li class="list-group-item">التأكد من الاستعداد للسفر بتوفير غرف في فنادق، رحلات سياحية ووسائل النقل</li>
+                <li class="list-group-item">التنسيق مع مختلف خطوط الطيران الدولية</li>
+              </ul>
+            </div>
         </section>
 
-        <section class="footer">
-            <div class="top-footer">
-                <ul>
-                    <li><a href=".">عنا،</a></li>
-                    <li><a href=".">شروط الاستخدام،</a></li>
-                    <li><a href=".">الأسئلة الشائعة،</a></li>
-                    <li><a href=".">الخصوصية</a></li>
-                </ul>
-                <ul>
-                    <li><a href=".">الرحلات القادمة،</a></li>
-                    <li><a href=".">وسائل النقل،</a></li>
-                    <li><a href=".">الفنادق،</a></li>
-                    <li><a href=".">الأسعار</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-              <h5>تواصل معنا</h5>
-                <ul class="social">
-                  <li><a href="."><i class="fab fa-facebook-f fa-2x"></i></a></li>
-                  <li><a href="."><i class="fab fa-twitter fa-2x"></i></a></li>
-                  <li><a href="."><i class="fab fa-instagram fa-2x"></i></a></li>
-                  <li><a href="."><i class="fab fa-yahoo fa-2x"></i></a></li>
-                </ul>
-                <h6>أسفار مسجل تحت رقم 76806870023 دبي - الامارات</h6>
-            </div>
-        </section>
+       
     </div>
+    <section class="footer">
+      <div class="top-footer">
+          <ul>
+              <li><a href=".">عنا،</a></li>
+              <li><a href=".">شروط الاستخدام،</a></li>
+              <li><a href=".">الأسئلة الشائعة،</a></li>
+              <li><a href=".">الخصوصية</a></li>
+          </ul>
+          <ul>
+              <li><a href=".">الرحلات القادمة،</a></li>
+              <li><a href=".">وسائل النقل،</a></li>
+              <li><a href=".">الفنادق،</a></li>
+              <li><a href=".">الأسعار</a></li>
+          </ul>
+      </div>
+      <div class="contact">
+        <h5>تواصل معنا</h5>
+          <ul class="social">
+            <li><a href="."><i class="fab fa-facebook-f fa-2x"></i></a></li>
+            <li><a href="."><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li><a href="."><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href="."><i class="fab fa-yahoo fa-2x"></i></a></li>
+          </ul>
+          <h6>أسفار مسجل تحت رقم 76806870023 دبي - الامارات</h6>
+      </div>
+  </section>
 </body>
 </html>
