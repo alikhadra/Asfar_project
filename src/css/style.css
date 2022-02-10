@@ -37,9 +37,6 @@ body {
 }
 
 /* Carousel Styling */
-.carousel-top {
-    margin-bottom: 50px;
-}
 .carousel-top .row {
     display: block !important;
 }
@@ -51,18 +48,19 @@ body {
     color: #222;
 }
 .caption h4 {
-    width: 70%;
+    max-width: 60%; 
     /* font-size: 22px; */
     margin-right: 20px;
+    /* display: inline-block; */
+    white-space: nowrap;
 }
 
 /* Search Button Styling */
 form.search-form {
     margin: auto;
-    margin-right: 50px;
-    max-width: 300px;
-    width: 30%;
-    margin-left: 250px;
+    /* margin-right: 50px; */
+    max-width: 30%;
+    /* margin-left: 250px; */
 }
 form.search-form input {
     padding: 10px;
@@ -73,8 +71,8 @@ form.search-form input {
     width: 80%;
     background: #f1f1f1;
     border-radius: 5px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
   form input:focus {
       outline: none;
@@ -142,13 +140,16 @@ form.search-form input {
     line-height: 2em;
     font-size: larger;
     font-weight: 800;
-    font-family:cursive;
     display: inline-block;
     width: 80%;    
-}   
+}
+.why-us ul li {
+    border-radius: 50%;
+    background-color: #fff;
+}
 .why-us .card:hover {
-    background-color: red !important;
-    transition: all 0.5s ease-in-out;
+    background-color: #0069D9 !important;
+    transition: 0.5s ease-out;
 }
 .footer {
     background-color: rgb(46, 46, 46);
@@ -177,7 +178,7 @@ form.search-form input {
     margin-right: 25px;
     margin-top: 50px;
     font-weight: bolder;
-    color: rgb(133, 146, 255);
+    color: #ddd;
 }
 .footer .contact .social li{
     text-decoration: none;
@@ -211,7 +212,7 @@ form.search-form input {
 }
 .footer .contact h6 {
     font-size: 12px ;
-    color: #858EFA;
+    color: #ddd;
     margin-top: 50px;
 }
 
@@ -220,16 +221,25 @@ form.search-form input {
         display: block !important; 
         margin-bottom: 100px;
     }
+    .caption h4 {
+        margin-right: auto;
+        margin-left: auto;
+        white-space: normal;
+    }
     .caption form {
         margin-top: 20px;
         margin-right: auto;
         margin-left: auto;
+        width: 100%;
     }
 }
 
-@media(max-width:968px){
+@media(max-width:977px){
     .caption h3 {
         font-size: 20px;
+    }
+    .caption form {
+        min-width: 50%;
     }
 }
 @media(max-width:794px) {
@@ -237,7 +247,7 @@ form.search-form input {
         font-size: 18px;
     }
     .caption form {
-        width: 50%;
+        min-width: 50%;
     }
 }
 
@@ -256,5 +266,21 @@ form.search-form input {
 @media(max-width:832px) {
     .carousel-top .caption {
         display: block;
+    }
+}
+@media(min-width:977px) and(max-width:1020px){
+    .caption form {
+        margin-left: 5px;
+    }
+}
+@media(min-width: 1111px) {
+        .caption form {
+            margin-right: 5px;
+        }
+}
+@media(max-width:700px) {
+    .caption h4 {
+        font-size: 20px;
+        white-space: normal;
     }
 }
