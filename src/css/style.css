@@ -20,7 +20,7 @@ body {
 	color: black;
 }
 
-/* Navbar Styling */
+/*** Navbar Styling ***/
 .navbar {
         width: 100%;
 }
@@ -36,7 +36,7 @@ body {
     box-shadow: none;
 }
 
-/* Carousel Styling */
+/*** Carousel Styling ***/
 .carousel-top .row {
     display: block !important;
 }
@@ -47,20 +47,20 @@ body {
 .carousel .fa-chevron-left {
     color: #222;
 }
+.caption {
+    display: flex;
+
+}
 .caption h4 {
     max-width: 60%; 
-    /* font-size: 22px; */
     margin-right: 20px;
-    /* display: inline-block; */
-    white-space: nowrap;
 }
 
-/* Search Button Styling */
+/*** Search Button Styling ***/
 form.search-form {
     margin: auto;
-    /* margin-right: 50px; */
     max-width: 30%;
-    /* margin-left: 250px; */
+    flex-grow: 1;
 }
 form.search-form input {
     padding: 10px;
@@ -111,7 +111,7 @@ form.search-form input {
     font-weight: 800;
 }
 .features-trips .card {
-    width: 22rem;  
+    width: 22rem;
 }
 .features-trips .card img {
     height: 250px;
@@ -150,6 +150,7 @@ form.search-form input {
 .why-us .card:hover {
     background-color: #0069D9 !important;
     transition: 0.5s ease-out;
+    cursor:alias;
 }
 .footer {
     background-color: rgb(46, 46, 46);
@@ -216,6 +217,9 @@ form.search-form input {
     margin-top: 50px;
 }
 
+
+/*** Media Query ***/
+
 @media(max-width:976px){
     .caption {
         display: block !important; 
@@ -266,21 +270,5 @@ form.search-form input {
 @media(max-width:832px) {
     .carousel-top .caption {
         display: block;
-    }
-}
-@media(min-width:977px) and(max-width:1020px){
-    .caption form {
-        margin-left: 5px;
-    }
-}
-@media(min-width: 1111px) {
-        .caption form {
-            margin-right: 5px;
-        }
-}
-@media(max-width:700px) {
-    .caption h4 {
-        font-size: 20px;
-        white-space: normal;
     }
 }
